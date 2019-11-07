@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 01</title>
+    <script>
+        //1. декларация
+        var visitorName = '';
+
+        //2. използваме я
+        visitorName = window.prompt('Как се казвате?');
+
+        if( visitorName === null || visitorName === '' ){
+            visitorName = 'посетител';
+        }
+        
+
+        //3. извеждаме резултата
+        document.write('<h1>Здравейте ' + visitorName + '!</h1>');
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fugiat repellat velit necessitatibus unde commodi impedit nisi quas cum dolorem? Natus pariatur ex quod quam earum architecto incidunt dolor voluptatum.</p>
+    <noscript>
+        Моля, разрешете изпълнението на JS ... 
+    </noscript>
+</body>
+</html>
