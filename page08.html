@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 01</title>
+    <script>
+        //1. декларация
+        var message = 'Hello';
+
+        function showMessage(text,color){
+            if( typeof text !== 'string' || text.trim().length === 0){
+                // window.alert('Error:Missing message text:' + text)
+                console.error('Error:Missing message text:' + text);
+                // console.info('Info');
+                // console.log('Log');
+                // console.warn('Warn');
+                text = 'Default Message';
+            }
+            if( typeof color !== 'string' || text.trim().length === 0 ){
+                console.error('Invalid color:' + color);
+                color = '#00f';
+            }
+            document.write('<h4 style="color:'+color+'">'+text+'</h4>');
+        }
+
+        //2. извикваме я
+        showMessage( message,'green');
+        showMessage('Добавихте продукт в количката', 250);
+        showMessage('Проверете въведените данни','#F00');
+        
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fugiat repellat velit necessitatibus unde commodi impedit nisi quas cum dolorem? Natus pariatur ex quod quam earum architecto incidunt dolor voluptatum.</p>
+    <noscript>
+        Моля, разрешете изпълнението на JS ... 
+    </noscript>
+</body>
+</html>
