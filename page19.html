@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 01</title>
+    <style>
+        ul#gallery {
+            list-style: none;
+        }
+
+        ul#gallery li {
+            display: inline-block;
+            margin: 0 0 10px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Галерия</h1>
+    
+    <div id="view">
+        <img src="./pics-large/pic1-320x240.jpg" alt="">
+    </div> 
+
+    <ul id="gallery">
+        <li><img src="./pics-small/pic1.jpg" data-image="pic1-320x240.jpg" alt=""></li>
+        <li><img src="./pics-small/pic2.jpg" data-image="pic2-320x240.jpg" alt=""></li>
+        <li><img src="./pics-small/pic3.jpg" data-image="pic3-320x240.jpg" alt=""></li>
+        <li><img src="./pics-small/pic4.jpg" data-image="pic4-320x240.jpg" alt=""></li>
+        <li><img src="./pics-small/pic5.jpg" data-image="pic5-320x240.jpg" alt=""></li>
+        
+    </ul>
+     
+    <script defer src="js/app19.js"></script>
+</body>
+</html>
