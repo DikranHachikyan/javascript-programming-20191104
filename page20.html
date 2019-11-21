@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page 01</title>
+    <style>
+    ul#gallery {
+        list-style: none;
+    }
+    
+    ul#gallery li+li {
+        display: none;
+    }
+
+    </style>
+</head>
+<body>
+    <h1 id="title">Галерия</h1>
+    
+    <ul id="gallery">
+        <li><img src="./pics-large/pic1-320x240.jpg" alt=""></li>
+        <li><img src="./pics-large/pic2-320x240.jpg" alt=""></li>
+        <li><img src="./pics-large/pic3-320x240.jpg" alt=""></li>
+        <li><img src="./pics-large/pic4-320x240.jpg" alt=""></li>
+        <li><img src="./pics-large/pic5-320x240.jpg" alt=""></li>
+    </ul>
+    <div>
+        <button id="prv">Prev</button>
+        <button id="btnAuto">Auto</button>
+        <button id="nxt">Next</button>
+    </div> 
+    <script defer src="js/app20.js"></script>
+</body>
+</html>
