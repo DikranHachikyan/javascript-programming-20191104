@@ -13,10 +13,11 @@ var doc=document,
 
 
   btnShow.addEventListener('click',function(event){
-    var h2 = doc.querySelector('#view h2'),
-        link = doc.querySelector('#view a'),
-        img = doc.querySelector('#view a img'),
-        p = doc.querySelector('#view p');
+    var view = doc.querySelector('#view'),
+        h2 = view.querySelector('h2'),
+        link = view.querySelector('a'),
+        img = view.querySelector('a img'),
+        p = view.querySelector('p');
 
         h2.innerHTML = item.title;
         
